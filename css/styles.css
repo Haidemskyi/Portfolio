@@ -1,0 +1,521 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(34, 40, 49, 1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Styles */
+
+header {
+    border: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-family: 'Oswald', sans-serif;
+    color: rgba(238, 238, 238, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    margin: 48px 96px 48px 96px;
+}
+
+.nav__links {
+    display: flex;
+    gap: 48px;
+    margin: 48px 96px 48px 96px;
+}
+
+.nav__link {
+    color: rgba(238, 238, 238, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+
+/* Main Section Styles */
+
+.main_section {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+.main_div {
+    margin-top: 202.5px;
+    margin-left: 180px;
+}
+
+.curl_arrow {
+    position: absolute;
+    left: 72px;
+    top: 275px;
+}
+
+.doodles_round {
+    position: absolute;
+    right: 79px;
+    top: 163px;
+
+}
+
+.person_img {
+    position: absolute;
+    top: 346px;
+    right: 226px;
+}
+
+.main_text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    color: rgb(256, 256, 256);
+}
+
+.main_dev {
+    font-family: 'Poppins', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(0, 173, 181, 1);
+    margin: 0;
+}
+
+.main_buttons {
+    margin-top: 48px;
+    display: flex;
+    gap: 24px;
+}
+
+.hire_button {
+    background-color: rgba(0, 173, 181, 1);
+    border: none;
+    border-radius: 24px;
+    padding: 10px 32px;
+    cursor: pointer;
+    color: rgba(238, 238, 238, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-shadow: #333333 0px 4px 4px;
+
+
+}
+
+.download_button {
+    background-color: rgb(52, 57, 64);
+    border-radius: 24px;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
+    color: rgba(238, 238, 238, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-shadow: #000000 0px 4px 4px;
+}
+
+.download_icon {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.down_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(52, 57, 65);
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+    margin-top: 243px;
+    margin-left: 284px;
+    margin-bottom: 64px;
+}
+
+.arrow {
+    width: 21px;
+    height: 36px;
+}
+
+/* About Me Section Styles */
+
+.about_me {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+    margin-bottom: 135px;
+}
+
+.music_svg {
+    left: 96px;
+    top: 1127px;
+}
+
+.about_svg {
+    position: absolute;
+}
+
+.lightbulb_svg {
+    left: 444px;
+}
+
+.about_div {
+    margin-left: 96px;
+    margin-top: 256px;
+}
+
+.about_me_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0%;
+    color: aliceblue;
+}
+
+.me_span {
+    color: rgb(0, 173, 181);
+}
+
+.about_me_text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    width: 389px;
+    height: 189px;
+    color: rgb(187, 189, 191);
+    padding-bottom: 350px;
+}
+
+.doodle_items {
+    left: 664px;
+    top: 1252px;
+    right: 110px;
+    z-index: 1;
+
+}
+
+.person2_img {
+    left: 772px;
+    top: 1462px;
+    z-index: 2;
+}
+
+.curl_arrow_about_me {
+    left: 257px;
+    top: 1650px;
+}
+
+/* My Projects Section Styles */
+
+.my_projects {
+    border-top: 1px solid rgba(238, 238, 238, 0.1);
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+    background-image: url(/images/background/Projects\ Page.png);
+}
+
+.main_projects_div {
+    margin-left: 120px;
+    margin-top: 268px;
+}
+
+.main_text_projects {
+    color: rgb(256, 256, 256);
+    font-family: "Poppins" sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0%;
+}
+
+.works_span {
+    color: rgb(0, 173, 181);
+}
+
+.buttons_div {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.projects_button {
+    border: none;
+    border-radius: 24px;
+    backdrop-filter: blur(8px);
+    background: rgb(46, 51, 59);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 10px 32px 10px 32px;
+    color: rgba(238, 238, 238, 1);
+    font-family: "Poppins" sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+
+}
+
+.projects {
+    display: flex;
+    gap: 48px;
+    margin-top: 48px;
+    margin-bottom: 269px;
+}
+
+.projects_item {
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    background: rgba(57, 62, 70, 0.5);
+    width: 368px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Add this to center horizontally */
+    flex-direction: column;
+}
+
+/* Contact Me Section Styles */
+
+.contact_me {
+    border: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+
+.contact_div {
+    display: flex;
+    position: relative;
+}
+
+.contact_h {
+    margin-top: 258px;
+    margin-left: 96px;
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0%;
+    color: rgb(256, 256, 256);
+}
+
+.mind_span {
+    color: rgb(0, 173, 181);
+}
+
+.input_div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 880px;
+    margin-top: 258px;
+    margin-left: 151px;
+    /* подгони под макет */
+}
+
+/* Каждое поле — вертикальный стек: label сверху, input/textarea ниже */
+.name_div,
+.email_div,
+.message_div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Сообщение занимает обе колонки */
+.message_div {
+    grid-column: 1 / -1;
+}
+
+/* Стили label */
+.input_div label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #eef;
+}
+
+/* Общие стили для input/textarea */
+.name_input,
+.email_input,
+.message_textarea {
+    box-sizing: border-box;
+    width: 100%;
+    color: rgba(238, 238, 238, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background: rgba(57, 62, 70, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 14px 16px;
+
+    outline: none;
+}
+
+/* Textarea: фикс. высота, без растягивания */
+.message_textarea {
+    min-height: 180px;
+    resize: none;
+    overflow: auto;
+
+    /* тёмный скроллбар (опционально) */
+    scrollbar-width: thin;
+    scrollbar-color: #5a5f66 transparent;
+}
+
+.message_textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.message_textarea::-webkit-scrollbar-thumb {
+    background: #5a5f66;
+    border-radius: 8px;
+}
+
+.message_textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Плейсхолдеры */
+.name_input::placeholder,
+.email_input::placeholder,
+.message_textarea::placeholder {
+    color: #8f959e;
+    font-weight: 600;
+}
+
+/* Кнопка справа снизу сетки */
+.send_button {
+    grid-column: 1;
+    /* во второй колонке */
+    justify-self: start;
+    /* прижать вправо */
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 10px 32px;
+    border: none;
+    border-radius: 40px;
+    background: #00b5b8;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 258px;
+}
+
+.arrow_down {
+    position: absolute;
+    left: 118px;
+    top: 450px;
+}
+
+.contact_svg {
+    position: absolute;
+}
+
+.step_person {
+    position: absolute;
+    left: 317px;
+    top: 408px;
+}
+
+.mail_svg {
+    position: absolute;
+    left: 1200px;
+    top: 783px
+}
+
+.keyboard_svg {
+    position: absolute;
+    top: 60px;
+    left: 820px;
+}
+
+/* Footer Styles */
+
+.footer_buttons {
+    display: flex;
+    margin-left: 535px;
+    gap: 68px;
+    margin-top: 110px;
+}
+
+.fb_item {
+    color: rgba(238, 238, 238, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer_svg {}
+
+.social_media {
+    display: flex;
+    gap: 48px;
+    margin-left: 588px;
+    margin-top: 48px;
+    margin-bottom: 167px;
+}
+
+.social_media>li {
+    border-radius: 50px;
+    background-color: rgb(57, 62, 70);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

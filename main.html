@@ -3,31 +3,138 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Geolocation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- TODO change to 1.0 for production   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Denys H.</title>
 </head>
 
 <body>
-    <script>
-        const x = document.getElementById("demo");
+    <header>
+        <nav class="nav">
+            <a href="#" class="nav__logo">Qbit Studio</a>
+            <ul class="nav__links">
+                <li><a href="#about_me" class="nav__link">About me</a></li>
+                <li><a href="#my_projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main_section" id="main_section">
+            <img src="./images/svg/curl_arrow.svg" alt="curl arrow" class="curl_arrow">
+            <div class="main_div">
+                <h1 class="main_text">FULL-STACK</h1>
+                <h1 class="main_dev">DEVELOPER</h1>
+                <div class="main_buttons">
+                    <button type="submit" class="hire_button"><a href="mailto:denys.haidemskyi@gmail.com">Hire
+                            me</a></button>
+                    <button type="download" class="download_button">Download CV<img src="./images/svg/download.svg"
+                            alt="download icon" class="download_icon">
+                    </button>
+                </div>
+                <a href="#about_me">
+                    <div class="down_arrow"><img src="./images/svg/arrow.svg" alt="arrow" class="arrow"></div>
+                </a>
+            </div>
+            <img src="./images/svg/doodles mixed round.svg" alt="doodles mixed round" class="doodles_round">
+            <img src="./images/svg/person.svg" alt="person" class="person_img">
+        </section>
+        <section class="about_me" id="about_me">
+            <img src="./images/svg/music.svg" alt="mus" class="music_svg about_svg">
+            <img src="./images/svg/lightbulb.svg" alt="lightbulb" class="lightbulb_svg about_svg">
+            <div class="about_div">
+                <h2 class="about_me_title" id="about_me">About <span class="me_span">Me</span></h2>
+                <p class="about_me_text">
+                    Creative developer at QBIT Studio, passionate about modern web technologies and digital design. I
+                    focus
+                    on creating
+                    responsive, efficient, and visually engaging applications that merge clean code, usability, and
+                    creativity into seamless
+                    user experiences across all platforms.
+                </p>
+            </div>
+            <img src="./images/svg/person2.svg" alt="person2" class="person2_img about_svg">
+            <!-- FIXME Make a right align for this image-->
+            <img src="./images/svg/doodle items.svg" alt="doodle items" class="doodle_items about_svg">
+            <img src="./images/svg/curlarrow_about_me.svg" alt="curl arrow about me"
+                class="curl_arrow_about_me about_svg">
+        </section>
+        <section class="my_projects" id="my_projects">
+            <div class="main_projects_div">
+                <h2 class="main_text_projects">My recent <span class="works_span">works</span></h2>
+                <div class="buttons_div">
+                    <button type="button" class="projects_button">All</button>
+                    <button type="button" class="projects_button">UI</button>
+                    <button type="button" class="projects_button">UX</button>
+                    <button type="button" class="projects_button">Web Design</button>
+                </div>
+                <ul class="projects list">
+                    <li class="projects_item li"><img src="./images/Course Website Landing Page Thumbnail 1.png" alt="">
+                    </li>
+                    <li class="projects_item li"><img src="./images/laptop.png" alt="laptop"></li>
+                    <li class="projects_item li"><img src="./images/phone.png" alt="laptop"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact_me" id="contact">
+            <div class="contact_div">
+                <h2 class="contact_h">Got a project in<br> <span class="mind_span">mind?</span></h2>
+                <div class="input_div">
+                    <div class="name_div">
+                        <label for="name">Your name</label>
+                        <input type="text" class="name_input" placeholder="Name" id="name">
+                    </div>
 
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(success, error);
-            } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-        }
+                    <div class="email_div">
+                        <label for="email">Your email</label>
+                        <input type="email" class="email_input" placeholder="Email" id="email">
+                    </div>
 
-        function success(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude;
-        }
+                    <div class="message_div">
+                        <label for="message">Your message</label>
+                        <textarea class="message_textarea" placeholder="Message" id="message"></textarea>
+                    </div>
 
-        function error() {
-            alert("Sorry, no position available.");
-        }
-    </script>
+                    <button type="button" class="send_button">
+                        <span>Send Message</span>
+                    </button>
+                </div>
+                <img src="./images/svg/arrow_down.svg" alt="arrow down" class="arrow_down contact_svg">
+                <img src="./images/svg/step_person.svg" alt=" step person" class="step_person contact_svg">
+                <img src="./images/svg/mail.svg" alt="  mail" class="mail_svg contact_svg">
+                <img src="./images/svg/keyboard.svg" alt=" keyboard" class="keyboard_svg contact_svg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer_buttons">
+            <a href="#main_section">
+                <li class="fb_item"><img src="./images/svg/home.svg" class="footer_svg">Home</li>
+            </a>
+            <a href="#about_me">
+                <li class="fb_item"><img src="./images/svg/user.svg" class="footer_svg">About me</li>
+            </a>
+            <a href="#contact">
+                <li class="fb_item"><img src="./images/svg/phone.svg" class="footer_svg">Contact</li>
+            </a>
+        </ul>
+        <ul class="social_media">
+            <li><img src="./images/svg/facebook.svg"></li>
+            <li><img src="./images/svg/instagram.svg"></li>
+            <li><img src="./images/svg/twitter.svg"></li>
+            <li><img src="./images/svg/youtube.svg"></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
